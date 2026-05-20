@@ -41,7 +41,9 @@ huggingface-cli login
 
 `generate_statefarm_controlnet.py` reads the original StateFarm CSV plus images,
 derives OpenPose keypoints and Canny edge maps, then feeds them into
-`SG161222/Realistic_Vision_V6.0_B2_noVAE` (previous runs used the B1 checkpoint)
+`SG161222/Realistic_Vision_V6.0_B2_noVAE` (previous runs used the B1 checkpoint) 
+replaced with 'stabilityai/stable-diffusion-xl-base-1.0' 
+
 with the SDXL ControlNet adapters (`diffusers/controlnet-openpose-sdxl-1.0` +
 `diffusers/controlnet-canny-sdxl-1.0`). B2 is slightly more demographically
 balanced; if you want to reproduce the older B1 + SD1.5 ControlNet results, pass
